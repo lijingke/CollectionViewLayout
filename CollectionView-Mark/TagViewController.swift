@@ -20,8 +20,13 @@ class TagViewController: UIViewController {
         return layout?.headerKind ?? ""
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isTranslucent = false
+    }
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         collectionView.register(ImageHeaderViewOne.self, forSupplementaryViewOfKind: headerKind, withReuseIdentifier: ImageHeaderViewOne.reuseID)
         configureUI()
         configureData()
@@ -41,15 +46,16 @@ class TagViewController: UIViewController {
     }
     
     @objc private func addAction(_ sender: UIBarButtonItem) {
-        print("Add")
         let text = DataManager.shared.generalText()
         tags[0].append(text)
         let indexPath = IndexPath(item: tags[0].count - 1, section: 0)
         collectionView.insertItems(at: [indexPath])
+        
+        let vc = testViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func delAction(_ sender: UIBarButtonItem) {
-        print("Del")
         let count = tags[0].count
         if count == 0 {
             return
@@ -195,7 +201,8 @@ class BasicsHeaderView: UICollectionReusableView {
         super.init(frame: frame)
         addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+            make.left.equalToSuperview().offset(20)
+            make.centerY.equalToSuperview()
         }
     }
     

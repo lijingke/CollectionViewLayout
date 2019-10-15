@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         configureUI()
         navigationItem.title = "UICollectionTest"
+        let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backItem
+        
     }
     
     let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"]]
@@ -72,11 +75,11 @@ extension ViewController: UITableViewDelegate {
                             }
             }else if indexPath.row == 2 {
                 let vc = StretchyHeaderViewController()
-//                navigationController?.pushViewController(vc, animated: true)
                 DispatchQueue.main.async {[weak self] in
                     self?.present(vc, animated: true, completion: nil)
                 }
             }else {
+                
                 let vc = TagViewController()
                 navigationController?.pushViewController(vc, animated: true)
             }
@@ -102,3 +105,4 @@ extension ViewController: UITableViewDataSource {
     
     
 }
+
