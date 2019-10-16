@@ -26,8 +26,8 @@ class TagViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
-        collectionView.register(ImageHeaderViewOne.self, forSupplementaryViewOfKind: headerKind, withReuseIdentifier: ImageHeaderViewOne.reuseID)
+        super.viewDidLoad()
+        view.addSubview(collectionView)
         configureUI()
         configureData()
     }
@@ -81,9 +81,14 @@ class TagViewController: UIViewController {
     }()
     
     lazy var collectionView: UICollectionView = {
-        let collection = UICollectionView(frame: .zero, collectionViewLayout: TagLayout())
+        let layout = TagLayout()
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.register(TagCell.self, forCellWithReuseIdentifier: TagCell.reuseID)
          collection.register(BasicsHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: BasicsHeaderView.reuseID)
+        collection.register(ImageHeaderViewOne.self, forSupplementaryViewOfKind: layout.headerKind, withReuseIdentifier: ImageHeaderViewOne.reuseID)
+        DispatchQueue.main.async {
+            
+        }
         collection.backgroundColor = .white
         collection.dataSource = self
         collection.alwaysBounceVertical = true
