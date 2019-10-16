@@ -50,38 +50,50 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let title = dataSource[indexPath.section][indexPath.row]
+        
         if indexPath.section == 0 {
-            if indexPath.row == 0 {
+            switch indexPath.row {
+            case 0:
                 let vc = BasicViewController()
                 DispatchQueue.main.async {[weak self] in
-                                self?.present(vc, animated: true, completion: nil)
-                            }
-            }else if indexPath.row == 1 {
+                    self?.present(vc, animated: true, completion: nil)
+                }
+            case 1:
                 let vc = LayoutAndDelegateViewController()
                 DispatchQueue.main.async {[weak self] in
-                                self?.present(vc, animated: true, completion: nil)
-                            }
+                    self?.present(vc, animated: true, completion: nil)
+                }
+            default:
+                break
             }
+
         }else if indexPath.section == 1 {
-            if indexPath.row == 0 {
+            
+            switch indexPath.row {
+            case 0:
                 let vc = CardLayoutViewController()
                 DispatchQueue.main.async {[weak self] in
-                                self?.present(vc, animated: true, completion: nil)
-                            }
-            }else if indexPath.row == 1 {
+                    self?.present(vc, animated: true, completion: nil)
+                }
+            case 1:
                 let vc = WaterFallsViewController()
                 DispatchQueue.main.async {[weak self] in
-                                self?.present(vc, animated: true, completion: nil)
-                            }
-            }else if indexPath.row == 2 {
+                    self?.present(vc, animated: true, completion: nil)
+                }
+            case 2:
                 let vc = StretchyHeaderViewController()
                 DispatchQueue.main.async {[weak self] in
                     self?.present(vc, animated: true, completion: nil)
                 }
-            }else {
+            case 3:
                 
                 let vc = TagViewController()
+                vc.navigationItem.title = title
                 navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
             }
         }
     }
