@@ -50,9 +50,6 @@ class TagViewController: UIViewController {
         tags[0].append(text)
         let indexPath = IndexPath(item: tags[0].count - 1, section: 0)
         collectionView.insertItems(at: [indexPath])
-        
-        let vc = testViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func delAction(_ sender: UIBarButtonItem) {

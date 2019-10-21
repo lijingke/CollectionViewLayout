@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3564B1F4F1AA38097D228690 /* Pods_CollectionView_Mark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFD79B4BB615963CCD12264 /* Pods_CollectionView_Mark.framework */; };
-		5418ABED2355D4B400FA3518 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418ABEC2355D4B400FA3518 /* testViewController.swift */; };
+		546CE093235D948400D92615 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CE092235D948400D92615 /* ScrollViewController.swift */; };
 		54A31F6A234F3B8200C43D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F69234F3B8200C43D4F /* AppDelegate.swift */; };
 		54A31F6C234F3B8200C43D4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F6B234F3B8200C43D4F /* SceneDelegate.swift */; };
 		54A31F6E234F3B8200C43D4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F6D234F3B8200C43D4F /* ViewController.swift */; };
@@ -53,7 +53,7 @@
 		1BF5E872115D3F9AB104061E /* Pods-CollectionView-MarkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-MarkUITests.release.xcconfig"; path = "Target Support Files/Pods-CollectionView-MarkUITests/Pods-CollectionView-MarkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1EC782AB1BFB7832CE09ABD2 /* Pods-CollectionView-Mark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-Mark.release.xcconfig"; path = "Target Support Files/Pods-CollectionView-Mark/Pods-CollectionView-Mark.release.xcconfig"; sourceTree = "<group>"; };
 		42AB05F7F918A9EA42C2125C /* Pods-CollectionView-Mark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-Mark.debug.xcconfig"; path = "Target Support Files/Pods-CollectionView-Mark/Pods-CollectionView-Mark.debug.xcconfig"; sourceTree = "<group>"; };
-		5418ABEC2355D4B400FA3518 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		546CE092235D948400D92615 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		54A31F66234F3B8200C43D4F /* CollectionView-Mark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollectionView-Mark.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A31F69234F3B8200C43D4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A31F6B234F3B8200C43D4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 				54B0C459235182FB0056110B /* StretchyHeaderViewController.swift */,
 				54B0C45F2351BD250056110B /* WaterFallsViewController.swift */,
 				54B0C4612351CFE60056110B /* TagViewController.swift */,
-				5418ABEC2355D4B400FA3518 /* testViewController.swift */,
+				546CE092235D948400D92615 /* ScrollViewController.swift */,
 				54AB0E6C2350825D0044B0FC /* Layout */,
 				54AE6283235034CD00F446C9 /* DataManager.swift */,
 				54A31F6F234F3B8200C43D4F /* Main.storyboard */,
@@ -436,7 +436,7 @@
 				54AE6284235034CD00F446C9 /* DataManager.swift in Sources */,
 				54B0C4602351BD250056110B /* WaterFallsViewController.swift in Sources */,
 				54B0C4642351D0630056110B /* TagLayout.swift in Sources */,
-				5418ABED2355D4B400FA3518 /* testViewController.swift in Sources */,
+				546CE093235D948400D92615 /* ScrollViewController.swift in Sources */,
 				54AB0E6B235081F20044B0FC /* CardLayoutViewController.swift in Sources */,
 				54A31F6E234F3B8200C43D4F /* ViewController.swift in Sources */,
 				54B0C4622351CFE60056110B /* TagViewController.swift in Sources */,

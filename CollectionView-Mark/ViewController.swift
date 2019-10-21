@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         
     }
     
-    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"]]
+    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"]]
     
-    let headViewTitles = ["BASICS", "CUSTOM LAYOUT"]
+    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView"]
     
     fileprivate func configureUI() {
         view.addSubview(tableView)
@@ -92,6 +92,15 @@ extension ViewController: UITableViewDelegate {
                 let vc = TagViewController()
                 vc.navigationItem.title = title
                 navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+        }else if indexPath.section == 2 {
+            switch indexPath.row {
+            case 0:
+                let vc = ScrollViewController()
+                vc.navigationItem.title = "ScrollView"
+                self.navigationController?.pushViewController(vc, animated: true)
             default:
                 break
             }
