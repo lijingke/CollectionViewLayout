@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3564B1F4F1AA38097D228690 /* Pods_CollectionView_Mark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFD79B4BB615963CCD12264 /* Pods_CollectionView_Mark.framework */; };
 		546CE093235D948400D92615 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CE092235D948400D92615 /* ScrollViewController.swift */; };
+		546CE097235D9EEE00D92615 /* CGAffineTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */; };
 		54A31F6A234F3B8200C43D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F69234F3B8200C43D4F /* AppDelegate.swift */; };
 		54A31F6C234F3B8200C43D4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F6B234F3B8200C43D4F /* SceneDelegate.swift */; };
 		54A31F6E234F3B8200C43D4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F6D234F3B8200C43D4F /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 		1EC782AB1BFB7832CE09ABD2 /* Pods-CollectionView-Mark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-Mark.release.xcconfig"; path = "Target Support Files/Pods-CollectionView-Mark/Pods-CollectionView-Mark.release.xcconfig"; sourceTree = "<group>"; };
 		42AB05F7F918A9EA42C2125C /* Pods-CollectionView-Mark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-Mark.debug.xcconfig"; path = "Target Support Files/Pods-CollectionView-Mark/Pods-CollectionView-Mark.debug.xcconfig"; sourceTree = "<group>"; };
 		546CE092235D948400D92615 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformViewController.swift; sourceTree = "<group>"; };
 		54A31F66234F3B8200C43D4F /* CollectionView-Mark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollectionView-Mark.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A31F69234F3B8200C43D4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A31F6B234F3B8200C43D4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				54B0C45F2351BD250056110B /* WaterFallsViewController.swift */,
 				54B0C4612351CFE60056110B /* TagViewController.swift */,
 				546CE092235D948400D92615 /* ScrollViewController.swift */,
+				546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */,
 				54AB0E6C2350825D0044B0FC /* Layout */,
 				54AE6283235034CD00F446C9 /* DataManager.swift */,
 				54A31F6F234F3B8200C43D4F /* Main.storyboard */,
@@ -447,6 +450,7 @@
 				54B0C45E2351B8C40056110B /* WaterFallsLayout.swift in Sources */,
 				54A31F6C234F3B8200C43D4F /* SceneDelegate.swift in Sources */,
 				54AB0E672350810A0044B0FC /* BasicViewController.swift in Sources */,
+				546CE097235D9EEE00D92615 /* CGAffineTransformViewController.swift in Sources */,
 				54B0C45C2351A70A0056110B /* StretchyLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

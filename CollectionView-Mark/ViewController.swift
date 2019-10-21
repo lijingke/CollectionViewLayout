@@ -14,16 +14,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        configureNav()
         configureUI()
+    }
+    
+    fileprivate func configureNav() {
         navigationItem.title = "UICollectionTest"
         let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backItem
         
+        self.edgesForExtendedLayout = []
+        self.navigationController?.navigationBar.isTranslucent = false
     }
     
-    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"]]
+    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "Animation"]
     
-    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView"]
+    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform"]]
     
     fileprivate func configureUI() {
         view.addSubview(tableView)
@@ -104,6 +110,10 @@ extension ViewController: UITableViewDelegate {
             default:
                 break
             }
+        }else if indexPath.section == 3 {
+            let vc = CGAffineTransformViewController()
+            vc.navigationItem.title = "CGAffineTransform"
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
