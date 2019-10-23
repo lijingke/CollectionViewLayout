@@ -70,25 +70,48 @@ class CGAffineTransformViewController: UIViewController {
 
     fileprivate func configureBtn() {
         var originX:CGFloat = 30
+        var originY:CGFloat = 30
         let btnW = (view.frame.width - 4 * 30) / 3
+        
         for i in 0...2 {
-            let btn = UIButton(type: .custom)
-            btn.addTarget(self, action: #selector(btnAction(sender:)), for: .touchDown)
-            btn.tag = i
-            switch i {
-            case 0:
-                btn.setTitle("平移转换", for: .normal)
-            case 1:
-                btn.setTitle("缩放转换", for: .normal)
-            case 2:
-                btn.setTitle("旋转转换", for: .normal)
-            default:
-                break
+            originY = 30 + CGFloat(i * 70)
+            for j in 0...2 {
+                if j == 0 {
+                    originX = 30
+                }
+                let btn = UIButton(type: .custom)
+                btn.addTarget(self, action: #selector(btnAction(sender:)), for: .touchDown)
+                btn.tag = i
+                if i == 0 {
+                    if j == 0 {
+                        btn.setTitle("平移转换", for: .normal)
+                    }else if j == 1 {
+                        btn.setTitle("缩放转换", for: .normal)
+                    }else if j == 2 {
+                        btn.setTitle("旋转转换", for: .normal)
+                    }
+                }else if i == 1 {
+                    if j == 0 {
+                        btn.setTitle("平移转换", for: .normal)
+                    }else if j == 1 {
+                        btn.setTitle("缩放转换", for: .normal)
+                    }else if j == 2 {
+                        btn.setTitle("旋转转换", for: .normal)
+                    }
+                }else if i == 2 {
+                    if j == 0 {
+                        btn.setTitle("平移转换", for: .normal)
+                    }else if j == 1 {
+                        btn.setTitle("缩放转换", for: .normal)
+                    }else if j == 2 {
+                        btn.setTitle("旋转转换", for: .normal)
+                    }
+                }
+                btn.backgroundColor = .randomColor()
+                btn.frame = CGRect(x: originX, y: originY, width: btnW, height: 60)
+                view.addSubview(btn)
+                originX = originX + btnW + 30
             }
-            btn.backgroundColor = UIColor.randomColor()
-            btn.frame = CGRect(x: originX, y: 30, width: btnW, height: 60)
-            view.addSubview(btn)
-            originX = 30 + (btnW + 30) * CGFloat(i + 1)
         }
     }
     
@@ -99,6 +122,7 @@ class CGAffineTransformViewController: UIViewController {
             UIView.animate(withDuration: 3) {
                 // 接着改变
 //                self.subView1.transform = self.subView1.transform.translatedBy(x: 50, y: 50)
+                
                 // 重新改变
                 self.subView1.transform = CGAffineTransform(translationX: 0, y: 0)
             }

@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,9 +27,9 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = false
     }
     
-    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "Animation"]
+    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "UIView Animations", "CALYER", "UIView Refresh"]
     
-    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform"]]
+    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform", "UIView Animations - 01", "UIView Animations - 02", "UIImageView Animations"], ["CALayer"], ["SetNeedsLayout"]]
     
     fileprivate func configureUI() {
         view.addSubview(tableView)
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         table.dataSource = self
         return table
     }()
-
+    
 }
 
 extension ViewController: UITableViewDelegate {
@@ -74,7 +74,7 @@ extension ViewController: UITableViewDelegate {
             default:
                 break
             }
-
+            
         }else if indexPath.section == 1 {
             
             switch indexPath.row {
@@ -111,9 +111,45 @@ extension ViewController: UITableViewDelegate {
                 break
             }
         }else if indexPath.section == 3 {
-            let vc = CGAffineTransformViewController()
-            vc.navigationItem.title = "CGAffineTransform"
-            self.navigationController?.pushViewController(vc, animated: true)
+            switch indexPath.row {
+            case 0:
+                let vc = CGAffineTransformViewController()
+                vc.navigationItem.title = "CGAffineTransform"
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 1:
+                let vc = AnimationsExamplesOneViewController()
+                vc.title = title
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 2:
+                let vc = AnimationsExamplesTwoViewController()
+                vc.title = title
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 3:
+                let vc = ImageViewAnimationViewController()
+                vc.title = title
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+            
+        }else if indexPath.section == 4 {
+            switch indexPath.row {
+            case 0:
+                let vc = CALayerViewController()
+                vc.title = title
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+            
+        }else if indexPath.section == 5 {
+            switch indexPath.row {
+            case 0:
+                let vc = UIViewRefreshViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
         }
     }
 }
@@ -133,7 +169,6 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = dataSource[indexPath.section][indexPath.row]
         return cell
     }
-    
     
 }
 

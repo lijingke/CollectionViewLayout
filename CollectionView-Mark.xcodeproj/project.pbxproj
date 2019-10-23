@@ -10,6 +10,10 @@
 		3564B1F4F1AA38097D228690 /* Pods_CollectionView_Mark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFD79B4BB615963CCD12264 /* Pods_CollectionView_Mark.framework */; };
 		546CE093235D948400D92615 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CE092235D948400D92615 /* ScrollViewController.swift */; };
 		546CE097235D9EEE00D92615 /* CGAffineTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */; };
+		546E6DAD235FF7AF00230766 /* UIViewRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6DAC235FF7AF00230766 /* UIViewRefreshViewController.swift */; };
+		546E6DAF235FFFB300230766 /* ImageViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6DAE235FFFB300230766 /* ImageViewAnimationViewController.swift */; };
+		546E6DB123600EAC00230766 /* CALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6DB023600EAC00230766 /* CALayerViewController.swift */; };
+		5498CC84235EDC3B00D5B881 /* AnimationsExamplesOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5498CC83235EDC3B00D5B881 /* AnimationsExamplesOneViewController.swift */; };
 		54A31F6A234F3B8200C43D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F69234F3B8200C43D4F /* AppDelegate.swift */; };
 		54A31F6C234F3B8200C43D4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F6B234F3B8200C43D4F /* SceneDelegate.swift */; };
 		54A31F6E234F3B8200C43D4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31F6D234F3B8200C43D4F /* ViewController.swift */; };
@@ -29,6 +33,7 @@
 		54B0C4602351BD250056110B /* WaterFallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0C45F2351BD250056110B /* WaterFallsViewController.swift */; };
 		54B0C4622351CFE60056110B /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0C4612351CFE60056110B /* TagViewController.swift */; };
 		54B0C4642351D0630056110B /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0C4632351D0630056110B /* TagLayout.swift */; };
+		54B80909235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B80908235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift */; };
 		BA0B511ED48ABC8C69EA4F20 /* Pods_CollectionView_MarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A650895EF557ADC420F8FD8E /* Pods_CollectionView_MarkTests.framework */; };
 		CE0325C64B55806B5C5B1A1F /* Pods_CollectionView_MarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69208F2E51080656289968E3 /* Pods_CollectionView_MarkUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +61,10 @@
 		42AB05F7F918A9EA42C2125C /* Pods-CollectionView-Mark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-Mark.debug.xcconfig"; path = "Target Support Files/Pods-CollectionView-Mark/Pods-CollectionView-Mark.debug.xcconfig"; sourceTree = "<group>"; };
 		546CE092235D948400D92615 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformViewController.swift; sourceTree = "<group>"; };
+		546E6DAC235FF7AF00230766 /* UIViewRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRefreshViewController.swift; sourceTree = "<group>"; };
+		546E6DAE235FFFB300230766 /* ImageViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewAnimationViewController.swift; sourceTree = "<group>"; };
+		546E6DB023600EAC00230766 /* CALayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerViewController.swift; sourceTree = "<group>"; };
+		5498CC83235EDC3B00D5B881 /* AnimationsExamplesOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExamplesOneViewController.swift; sourceTree = "<group>"; };
 		54A31F66234F3B8200C43D4F /* CollectionView-Mark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollectionView-Mark.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A31F69234F3B8200C43D4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A31F6B234F3B8200C43D4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +90,7 @@
 		54B0C45F2351BD250056110B /* WaterFallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallsViewController.swift; sourceTree = "<group>"; };
 		54B0C4612351CFE60056110B /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		54B0C4632351D0630056110B /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
+		54B80908235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExamplesTwoViewController.swift; sourceTree = "<group>"; };
 		5B0BB6DBED73D81D423A955F /* Pods-CollectionView-MarkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-MarkTests.release.xcconfig"; path = "Target Support Files/Pods-CollectionView-MarkTests/Pods-CollectionView-MarkTests.release.xcconfig"; sourceTree = "<group>"; };
 		69208F2E51080656289968E3 /* Pods_CollectionView_MarkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionView_MarkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5144AC44A213B9CAD8216E0 /* Pods-CollectionView-MarkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-MarkTests.debug.xcconfig"; path = "Target Support Files/Pods-CollectionView-MarkTests/Pods-CollectionView-MarkTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +173,11 @@
 				54B0C4612351CFE60056110B /* TagViewController.swift */,
 				546CE092235D948400D92615 /* ScrollViewController.swift */,
 				546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */,
+				5498CC83235EDC3B00D5B881 /* AnimationsExamplesOneViewController.swift */,
+				54B80908235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift */,
+				546E6DAE235FFFB300230766 /* ImageViewAnimationViewController.swift */,
+				546E6DB023600EAC00230766 /* CALayerViewController.swift */,
+				546E6DAC235FF7AF00230766 /* UIViewRefreshViewController.swift */,
 				54AB0E6C2350825D0044B0FC /* Layout */,
 				54AE6283235034CD00F446C9 /* DataManager.swift */,
 				54A31F6F234F3B8200C43D4F /* Main.storyboard */,
@@ -441,9 +456,14 @@
 				54B0C4642351D0630056110B /* TagLayout.swift in Sources */,
 				546CE093235D948400D92615 /* ScrollViewController.swift in Sources */,
 				54AB0E6B235081F20044B0FC /* CardLayoutViewController.swift in Sources */,
+				546E6DB123600EAC00230766 /* CALayerViewController.swift in Sources */,
 				54A31F6E234F3B8200C43D4F /* ViewController.swift in Sources */,
 				54B0C4622351CFE60056110B /* TagViewController.swift in Sources */,
 				54AB0E6E235082680044B0FC /* CardLayout.swift in Sources */,
+				5498CC84235EDC3B00D5B881 /* AnimationsExamplesOneViewController.swift in Sources */,
+				546E6DAD235FF7AF00230766 /* UIViewRefreshViewController.swift in Sources */,
+				546E6DAF235FFFB300230766 /* ImageViewAnimationViewController.swift in Sources */,
+				54B80909235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift in Sources */,
 				54AB0E69235081A90044B0FC /* LayoutAndDelegateViewController.swift in Sources */,
 				54A31F6A234F3B8200C43D4F /* AppDelegate.swift in Sources */,
 				54B0C45A235182FB0056110B /* StretchyHeaderViewController.swift in Sources */,
