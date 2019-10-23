@@ -124,9 +124,8 @@ class CALayerViewController: UIViewController {
         return view
     }()
     
-    lazy var view6: UIView = {
-        let view = UIView()
-        view.backgroundColor = .randomColor()
+    lazy var view6: CustomView = {
+        let view = CustomView()
         return view
     }()
     
@@ -192,4 +191,33 @@ extension CALayerViewController {
         }
         
     }
+}
+
+class CustomView: UIView {
+    
+    let view = UIView()
+    
+    override class var layerClass: AnyClass {
+        return CAGradientLayer.self
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        prepareView()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        prepareView()
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    fileprivate func prepareView() {
+        if let gradientLayer = self.layer as?CAGradientLayer {
+            gradientLayer.colors = [UIColor.randomColor().cgColor, UIColor.randomColor().cgColor]
+            gradientLayer.startPoint = CGPoint.zero
+            gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        }
+    }
+    
 }
