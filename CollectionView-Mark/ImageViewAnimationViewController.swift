@@ -14,6 +14,9 @@ class ImageViewAnimationViewController: UIViewController {
         super.viewDidLoad()
         configureUI()
         configureData()
+        
+        let person = Person(name: "ljk")
+
     }
         
     @objc fileprivate func btnAction(_ sender: UIButton) {
@@ -28,6 +31,15 @@ class ImageViewAnimationViewController: UIViewController {
         default:
             break
         }
+        
+    }
+    
+    fileprivate func show<T>(para: T) {
+        print("Hello \(para)")
+    }
+    
+    fileprivate func show<T, U>(name f: T, object: U) {
+        print("Hello \(f)" + "\(object)")
     }
     
     fileprivate func breathingAction() {
@@ -59,6 +71,23 @@ class ImageViewAnimationViewController: UIViewController {
         view1.animationImages = arr
         view1.animationDuration = 2
         view1.animationRepeatCount = 3
+        
+        var intArr:[Int] = [8,2,3,4,5]
+        let sortArr = intArr.sorted(){$0 > $1}
+        print(sortArr)
+        
+        typealias CompletionHandle = () -> Void
+        
+        let sortedDatas = intArr.sortedDatas(by: <)
+        print(intArr)
+        print(sortedDatas)
+        
+        let netManager = NetWorkManager()
+        netManager.getUserInfo(phone: "123456", success: {
+            print("刷新你的界面")
+        }) { (errorMessage) in
+            print(errorMessage)
+        }
     }
     
     
@@ -144,3 +173,45 @@ extension ImageViewAnimationViewController {
     }
     
 }
+
+extension Array {
+    mutating func sortedDatas(by: (Element, Element) -> Bool) -> [Element] {
+        for i in 0...self.count - 1 {
+            for j in i...self.count - 1 {
+                if by(self[i], self[j]) {
+                    (self[i], self[j]) = (self[j], self[i])
+                }
+            }
+        }
+        return self
+    }
+}
+
+class NetWorkManager {
+        
+    func getUserInfo(phone: String?, success:@escaping (() -> Void), failure: ((_ errorMessage: String) -> Void)) {
+        print("函数开始执行")
+        guard let _ = phone else {
+            print("执行了failure闭包")
+            failure("电话号码不能为空")
+            return
+        }
+        // 用来模拟网络请求
+        let dataTask = URLSession.shared.dataTask(with: URL.init(string: "https://www.baidu.com")!) {(data, response, nil) in
+            print("执行了Success闭包")
+            success()
+        }
+        dataTask.resume()
+        print("函数执行结束")
+    }
+}
+
+class Person: NSObject {
+    var name: String
+    init(name: String) {
+        print("init 的方法的实现")
+        self.name = name
+    }
+    
+}
+

@@ -34,6 +34,7 @@
 		54B0C4622351CFE60056110B /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0C4612351CFE60056110B /* TagViewController.swift */; };
 		54B0C4642351D0630056110B /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0C4632351D0630056110B /* TagLayout.swift */; };
 		54B80909235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B80908235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift */; };
+		54D167932373EE8E004669DC /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D167922373EE8E004669DC /* GetLocationViewController.swift */; };
 		BA0B511ED48ABC8C69EA4F20 /* Pods_CollectionView_MarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A650895EF557ADC420F8FD8E /* Pods_CollectionView_MarkTests.framework */; };
 		CE0325C64B55806B5C5B1A1F /* Pods_CollectionView_MarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69208F2E51080656289968E3 /* Pods_CollectionView_MarkUITests.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		54B0C4612351CFE60056110B /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		54B0C4632351D0630056110B /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
 		54B80908235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExamplesTwoViewController.swift; sourceTree = "<group>"; };
+		54D167922373EE8E004669DC /* GetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; };
 		5B0BB6DBED73D81D423A955F /* Pods-CollectionView-MarkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-MarkTests.release.xcconfig"; path = "Target Support Files/Pods-CollectionView-MarkTests/Pods-CollectionView-MarkTests.release.xcconfig"; sourceTree = "<group>"; };
 		69208F2E51080656289968E3 /* Pods_CollectionView_MarkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionView_MarkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5144AC44A213B9CAD8216E0 /* Pods-CollectionView-MarkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionView-MarkTests.debug.xcconfig"; path = "Target Support Files/Pods-CollectionView-MarkTests/Pods-CollectionView-MarkTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				546E6DAE235FFFB300230766 /* ImageViewAnimationViewController.swift */,
 				546E6DB023600EAC00230766 /* CALayerViewController.swift */,
 				546E6DAC235FF7AF00230766 /* UIViewRefreshViewController.swift */,
+				54D167922373EE8E004669DC /* GetLocationViewController.swift */,
 				54AB0E6C2350825D0044B0FC /* Layout */,
 				54AE6283235034CD00F446C9 /* DataManager.swift */,
 				54A31F6F234F3B8200C43D4F /* Main.storyboard */,
@@ -451,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D167932373EE8E004669DC /* GetLocationViewController.swift in Sources */,
 				54AE6284235034CD00F446C9 /* DataManager.swift in Sources */,
 				54B0C4602351BD250056110B /* WaterFallsViewController.swift in Sources */,
 				54B0C4642351D0630056110B /* TagLayout.swift in Sources */,

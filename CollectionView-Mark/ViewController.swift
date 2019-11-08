@@ -27,9 +27,9 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = false
     }
     
-    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "UIView Animations", "CALYER", "UIView Refresh"]
+    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "UIView Animations", "CALYER", "UIView Refresh", "Location"]
     
-    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform", "UIView Animations - 01", "UIView Animations - 02", "UIImageView Animations"], ["CALayer"], ["SetNeedsLayout"]]
+    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform", "UIView Animations - 01", "UIView Animations - 02", "UIImageView Animations"], ["CALayer"], ["SetNeedsLayout"], ["Location"]]
     
     fileprivate func configureUI() {
         view.addSubview(tableView)
@@ -147,6 +147,15 @@ extension ViewController: UITableViewDelegate {
             case 0:
                 let vc = UIViewRefreshViewController()
                 self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+        }else if indexPath.section == 6 {
+            switch indexPath.row {
+            case 0:
+                let vc = GetLocationViewController()
+                navigationController?.pushViewController(vc, animated: true)
+                break
             default:
                 break
             }
