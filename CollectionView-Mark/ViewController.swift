@@ -27,9 +27,9 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = false
     }
     
-    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "UIView Animations", "CALYER", "UIView Refresh", "Location"]
+    let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "UIView Animations", "CALYER", "UIView Refresh", "Location", "NotificationCenter", "Download"]
     
-    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform", "UIView Animations - 01", "UIView Animations - 02", "UIImageView Animations"], ["CALayer"], ["SetNeedsLayout"], ["Location"]]
+    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform", "UIView Animations - 01", "UIView Animations - 02", "UIImageView Animations"], ["CALayer"], ["SetNeedsLayout"], ["Location"], ["NotificationCenterDemo"], ["PDF Download"]]
     
     fileprivate func configureUI() {
         view.addSubview(tableView)
@@ -154,6 +154,27 @@ extension ViewController: UITableViewDelegate {
             switch indexPath.row {
             case 0:
                 let vc = GetLocationViewController()
+                vc.navigationItem.title = "GetLocationDemo"
+                navigationController?.pushViewController(vc, animated: true)
+                break
+            default:
+                break
+            }
+        }else if indexPath.section == 7 {
+            switch indexPath.row {
+            case 0:
+                let vc = NotificationCenterViewController()
+                vc.navigationItem.title = "NotificationCenterDemo"
+                navigationController?.pushViewController(vc, animated: true)
+                break
+            default:
+                break
+            }
+        }else if indexPath.section == 8 {
+            switch indexPath.row {
+            case 0:
+                let vc = PDFDownloadViewController()
+                vc.navigationItem.title = "PDF Download"
                 navigationController?.pushViewController(vc, animated: true)
                 break
             default:

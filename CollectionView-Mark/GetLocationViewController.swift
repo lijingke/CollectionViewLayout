@@ -91,6 +91,13 @@ class GetLocationViewController: UIViewController {
         return btn
     }()
     
+    fileprivate func showAlert(latitude:CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance, name: String) {
+        let alertC = UIAlertController(title: "定位成功！", message: "你的经度是:\(String(format: "%0.2f", latitude))\n你的纬度是:\(String(format: "%0.2f",                                                               longitude))\n你的海拔是:\(String(format: "%0.2f", altitude))\n\n你的位置是:\(name)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "确定", style: .default, handler: nil)
+        alertC.addAction(okAction)
+        present(alertC, animated: true, completion: nil)
+    }
+    
 }
 
 extension GetLocationViewController: CLLocationManagerDelegate {
@@ -106,9 +113,33 @@ extension GetLocationViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 //        lock.lock()
         currentLocation = locations.last
-        print("定位经度为：\(currentLocation.coordinate.latitude)")
-        print("定位纬度为：\(currentLocation.coordinate.longitude)")
-        print("定位海拔为：\(currentLocation.altitude)")
+        let latitude = currentLocation.coordinate.latitude
+        let longitude = currentLocation.coordinate.longitude
+        let altitude = currentLocation.altitude
+        
+        print("定位经度为：\(latitude)")
+        print("定位纬度为：\(longitude)")
+        print("定位海拔为：\(altitude)")
+                
+        let geoCoder = CLGeocoder()
+        geoCoder.reverseGeocodeLocation(currentLocation) { (placemarks, error) in
+            if placemarks!.count > 0 {
+                let placeMark = placemarks?.first
+                let country = placeMark?.country ?? ""
+                let administrativeArea = placeMark?.administrativeArea ?? ""
+                let locality = placeMark?.locality ?? ""
+                let subLocality = placeMark?.subLocality ?? ""
+                let thoroughfare = placeMark?.thoroughfare ?? ""
+       
+                let address = country + administrativeArea + locality + subLocality + thoroughfare
+                
+                self.showAlert(latitude: latitude, longitude: longitude, altitude: altitude, name: address)
+            }else if error == nil && placemarks?.count == 0 {
+                print("没有地址返回")
+            }else if error != nil {
+                print("location error\(String(describing: error))")
+            }
+        }
 //        lock.unlock()
         locationManager.stopUpdatingLocation()
     }
