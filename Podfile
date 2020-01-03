@@ -7,6 +7,7 @@ target 'CollectionView-Mark' do
 
   # Pods for CollectionView-Mark
   pod 'SnapKit'
+  pod 'IQKeyboardManagerSwift'
 
   target 'CollectionView-MarkTests' do
     inherit! :search_paths

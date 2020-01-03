@@ -12,7 +12,14 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 class PDFDownloadView: UIView {
     
-    var sessionManager = appDelegate.sessionManager
+//    var sessionManager = appDelegate.sessionManager
+    var sessionManager: SessionManager = {
+        var configuration = SessionConfiguration()
+        configuration.allowsCellularAccess = true
+        let manager = SessionManager("default", configuration: configuration, operationQueue: DispatchQueue(label: "com.Tiercel.SessionManager.operationQueue"))
+        return manager
+    }()
+
     
     var dataSource: [[PDFEntity]] = [[PDFEntity]]()
     
@@ -20,6 +27,10 @@ class PDFDownloadView: UIView {
         super.init(frame: frame)
         configureUI()
         createData()
+    }
+    
+    deinit {
+        print("leave")
     }
     
     fileprivate func configureUI() {
@@ -92,11 +103,8 @@ extension PDFDownloadView: UICollectionViewDataSource {
                     print("下载中，进度：\(progress)")
                     cell.setProgress(progress: Float(progress))
                 }).success({ (task) in
-                    self?.dataSource[indexPath.section][indexPath.row].hasDownload = true
-                    cell.downView.removeFromSuperview()
-                    cell.downloadedIcon.isHidden = false
-                    print("下载完成")
                     self?.collectionView.reloadData()
+                    print("下载完成")
                 }).failure({ (task) in
                     print("下载失败")
                 })
@@ -126,7 +134,7 @@ extension PDFDownloadView: UICollectionViewDataSource {
                 entity.name = "淋病诊断"
                 entity.indexInfo = "(WS 268—2019)"
                 entity.cover = "cover_lb"
-                entity.filePath = "http://www.gov.cn/zhengce/pdfFile/2019_PDF.pdf"
+                entity.filePath = "http://dldir1.qq.com/qqfile/QQforMac/QQ_V4.2.4.dmg"
             case 1:
                 entity.name = "梅毒诊断"
                 entity.indexInfo = "(WS 273—2018)"

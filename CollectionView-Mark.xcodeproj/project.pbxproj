@@ -34,13 +34,20 @@
 		5415DBEF239A2CA100E94669 /* PDFPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415DBEE239A2CA100E94669 /* PDFPreviewViewController.swift */; };
 		5415DBF1239A2CBD00E94669 /* PDFPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415DBF0239A2CBD00E94669 /* PDFPreviewView.swift */; };
 		5415DBF3239A2EE100E94669 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415DBF2239A2EE100E94669 /* UIView+Extension.swift */; };
-		5415DBF5239A308B00E94669 /* git-cheatsheet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5415DBF4239A308B00E94669 /* git-cheatsheet.pdf */; };
 		5415DBF7239A366F00E94669 /* PDFInfoHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5415DBF6239A366F00E94669 /* PDFInfoHeadView.swift */; };
+		542CC91623BDC2A5005EFAD6 /* UIImage+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CC91523BDC2A5005EFAD6 /* UIImage+ Extension.swift */; };
+		542FBDD023BDD28000E8F442 /* tagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542FBDCF23BDD28000E8F442 /* tagViewModel.swift */; };
+		542FBDD223BDD79C00E8F442 /* ChatFilterEventProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542FBDD123BDD79C00E8F442 /* ChatFilterEventProtocol.swift */; };
+		545D083223BB50E200C9E6C0 /* ChatFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545D083123BB50E200C9E6C0 /* ChatFilterViewController.swift */; };
+		545D083423BB519100C9E6C0 /* CommonInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545D083323BB519100C9E6C0 /* CommonInputCell.swift */; };
+		545D083623BB53B200C9E6C0 /* ChatFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545D083523BB53B200C9E6C0 /* ChatFilterView.swift */; };
+		545D083823BB592300C9E6C0 /* CommonAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545D083723BB592300C9E6C0 /* CommonAddCell.swift */; };
 		546CE093235D948400D92615 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CE092235D948400D92615 /* ScrollViewController.swift */; };
 		546CE097235D9EEE00D92615 /* CGAffineTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */; };
 		546E6DAD235FF7AF00230766 /* UIViewRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6DAC235FF7AF00230766 /* UIViewRefreshViewController.swift */; };
 		546E6DAF235FFFB300230766 /* ImageViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6DAE235FFFB300230766 /* ImageViewAnimationViewController.swift */; };
 		546E6DB123600EAC00230766 /* CALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6DB023600EAC00230766 /* CALayerViewController.swift */; };
+		54812E6223BB47030029FEB9 /* ChatSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54812E6123BB47030029FEB9 /* ChatSettingViewController.swift */; };
 		548988192398FB6D00287FBD /* PDFDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548988182398FB6D00287FBD /* PDFDownloadViewController.swift */; };
 		5489881F2398FC6A00287FBD /* PDFDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5489881E2398FC6A00287FBD /* PDFDownloadView.swift */; };
 		548D729323827A07003DE896 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548D729223827A07003DE896 /* NotificationCenterViewController.swift */; };
@@ -66,6 +73,10 @@
 		54B0C4642351D0630056110B /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0C4632351D0630056110B /* TagLayout.swift */; };
 		54B80909235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B80908235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift */; };
 		54D167932373EE8E004669DC /* GetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D167922373EE8E004669DC /* GetLocationViewController.swift */; };
+		54E1A38E23BD8701003EEF74 /* FilterViewHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1A38D23BD8701003EEF74 /* FilterViewHeadCell.swift */; };
+		54E1A39023BD90D4003EEF74 /* ChatFilterTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1A38F23BD90D4003EEF74 /* ChatFilterTagCell.swift */; };
+		54E1A39223BD9259003EEF74 /* ChatFilterTagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1A39123BD9259003EEF74 /* ChatFilterTagCollectionCell.swift */; };
+		54E1A39423BD9DA1003EEF74 /* UICollectionViewFlowLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E1A39323BD9DA1003EEF74 /* UICollectionViewFlowLayout+Extension.swift */; };
 		54EE549C2398FFFE002D70A0 /* PDFCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE549B2398FFFE002D70A0 /* PDFCollectionCell.swift */; };
 		54EE54A12399065A002D70A0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE54A02399065A002D70A0 /* UIColor+Extension.swift */; };
 		54EE54A323990781002D70A0 /* PDFCollectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE54A223990781002D70A0 /* PDFCollectionFooter.swift */; };
@@ -124,13 +135,20 @@
 		5415DBEE239A2CA100E94669 /* PDFPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewViewController.swift; sourceTree = "<group>"; };
 		5415DBF0239A2CBD00E94669 /* PDFPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewView.swift; sourceTree = "<group>"; };
 		5415DBF2239A2EE100E94669 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		5415DBF4239A308B00E94669 /* git-cheatsheet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "git-cheatsheet.pdf"; sourceTree = "<group>"; };
 		5415DBF6239A366F00E94669 /* PDFInfoHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFInfoHeadView.swift; sourceTree = "<group>"; };
+		542CC91523BDC2A5005EFAD6 /* UIImage+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ Extension.swift"; sourceTree = "<group>"; };
+		542FBDCF23BDD28000E8F442 /* tagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagViewModel.swift; sourceTree = "<group>"; };
+		542FBDD123BDD79C00E8F442 /* ChatFilterEventProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFilterEventProtocol.swift; sourceTree = "<group>"; };
+		545D083123BB50E200C9E6C0 /* ChatFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFilterViewController.swift; sourceTree = "<group>"; };
+		545D083323BB519100C9E6C0 /* CommonInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInputCell.swift; sourceTree = "<group>"; };
+		545D083523BB53B200C9E6C0 /* ChatFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFilterView.swift; sourceTree = "<group>"; };
+		545D083723BB592300C9E6C0 /* CommonAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAddCell.swift; sourceTree = "<group>"; };
 		546CE092235D948400D92615 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		546CE096235D9EEE00D92615 /* CGAffineTransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformViewController.swift; sourceTree = "<group>"; };
 		546E6DAC235FF7AF00230766 /* UIViewRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRefreshViewController.swift; sourceTree = "<group>"; };
 		546E6DAE235FFFB300230766 /* ImageViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewAnimationViewController.swift; sourceTree = "<group>"; };
 		546E6DB023600EAC00230766 /* CALayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerViewController.swift; sourceTree = "<group>"; };
+		54812E6123BB47030029FEB9 /* ChatSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSettingViewController.swift; sourceTree = "<group>"; };
 		548988182398FB6D00287FBD /* PDFDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDownloadViewController.swift; sourceTree = "<group>"; };
 		5489881E2398FC6A00287FBD /* PDFDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDownloadView.swift; sourceTree = "<group>"; };
 		548D729223827A07003DE896 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +180,10 @@
 		54B0C4632351D0630056110B /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
 		54B80908235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExamplesTwoViewController.swift; sourceTree = "<group>"; };
 		54D167922373EE8E004669DC /* GetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		54E1A38D23BD8701003EEF74 /* FilterViewHeadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewHeadCell.swift; sourceTree = "<group>"; };
+		54E1A38F23BD90D4003EEF74 /* ChatFilterTagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFilterTagCell.swift; sourceTree = "<group>"; };
+		54E1A39123BD9259003EEF74 /* ChatFilterTagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFilterTagCollectionCell.swift; sourceTree = "<group>"; };
+		54E1A39323BD9DA1003EEF74 /* UICollectionViewFlowLayout+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Extension.swift"; sourceTree = "<group>"; };
 		54EE549B2398FFFE002D70A0 /* PDFCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCollectionCell.swift; sourceTree = "<group>"; };
 		54EE54A02399065A002D70A0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		54EE54A223990781002D70A0 /* PDFCollectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCollectionFooter.swift; sourceTree = "<group>"; };
@@ -268,6 +290,19 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		54812E6023BB46CC0029FEB9 /* Xmsg */ = {
+			isa = PBXGroup;
+			children = (
+				54E1A39523BDA8E9003EEF74 /* Model */,
+				54E1A39723BDA903003EEF74 /* View */,
+				54E1A39623BDA8F8003EEF74 /* Controller */,
+				542CC91523BDC2A5005EFAD6 /* UIImage+ Extension.swift */,
+				54E1A39323BD9DA1003EEF74 /* UICollectionViewFlowLayout+Extension.swift */,
+				542FBDD123BDD79C00E8F442 /* ChatFilterEventProtocol.swift */,
+			);
+			path = Xmsg;
+			sourceTree = "<group>";
+		};
 		5489881A2398FC2D00287FBD /* Download */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,7 +368,6 @@
 		54A31F68234F3B8200C43D4F /* CollectionView-Mark */ = {
 			isa = PBXGroup;
 			children = (
-				5415DBF4239A308B00E94669 /* git-cheatsheet.pdf */,
 				54EE549D2399063B002D70A0 /* Extension */,
 				54A31F69234F3B8200C43D4F /* AppDelegate.swift */,
 				54A31F6B234F3B8200C43D4F /* SceneDelegate.swift */,
@@ -353,6 +387,7 @@
 				546E6DAC235FF7AF00230766 /* UIViewRefreshViewController.swift */,
 				54D167922373EE8E004669DC /* GetLocationViewController.swift */,
 				548D729223827A07003DE896 /* NotificationCenterViewController.swift */,
+				54812E6023BB46CC0029FEB9 /* Xmsg */,
 				5489881A2398FC2D00287FBD /* Download */,
 				54AB0E6C2350825D0044B0FC /* Layout */,
 				54AE6283235034CD00F446C9 /* DataManager.swift */,
@@ -391,6 +426,36 @@
 				54B0C4632351D0630056110B /* TagLayout.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		54E1A39523BDA8E9003EEF74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				542FBDCF23BDD28000E8F442 /* tagViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E1A39623BDA8F8003EEF74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54812E6123BB47030029FEB9 /* ChatSettingViewController.swift */,
+				545D083123BB50E200C9E6C0 /* ChatFilterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E1A39723BDA903003EEF74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				545D083523BB53B200C9E6C0 /* ChatFilterView.swift */,
+				545D083323BB519100C9E6C0 /* CommonInputCell.swift */,
+				545D083723BB592300C9E6C0 /* CommonAddCell.swift */,
+				54E1A38F23BD90D4003EEF74 /* ChatFilterTagCell.swift */,
+				54E1A39123BD9259003EEF74 /* ChatFilterTagCollectionCell.swift */,
+				54E1A38D23BD8701003EEF74 /* FilterViewHeadCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		54EE549D2399063B002D70A0 /* Extension */ = {
@@ -527,7 +592,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				54A31F76234F3B8300C43D4F /* LaunchScreen.storyboard in Resources */,
-				5415DBF5239A308B00E94669 /* git-cheatsheet.pdf in Resources */,
 				54A31F73234F3B8300C43D4F /* Assets.xcassets in Resources */,
 				54A31F71234F3B8200C43D4F /* Main.storyboard in Resources */,
 			);
@@ -640,7 +704,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542CC91623BDC2A5005EFAD6 /* UIImage+ Extension.swift in Sources */,
 				54D167932373EE8E004669DC /* GetLocationViewController.swift in Sources */,
+				542FBDD223BDD79C00E8F442 /* ChatFilterEventProtocol.swift in Sources */,
+				542FBDD023BDD28000E8F442 /* tagViewModel.swift in Sources */,
 				54AE6284235034CD00F446C9 /* DataManager.swift in Sources */,
 				5415DBE42399FA7B00E94669 /* DispatchQueue+Safe.swift in Sources */,
 				54EE549C2398FFFE002D70A0 /* PDFCollectionCell.swift in Sources */,
@@ -648,19 +715,24 @@
 				5415DBD82399FA7B00E94669 /* Common.swift in Sources */,
 				5415DBD92399FA7B00E94669 /* Cache.swift in Sources */,
 				5415DBE12399FA7B00E94669 /* URLSession+ResumeData.swift in Sources */,
+				545D083623BB53B200C9E6C0 /* ChatFilterView.swift in Sources */,
 				54B0C4602351BD250056110B /* WaterFallsViewController.swift in Sources */,
 				5415DBE22399FA7B00E94669 /* Array+Safe.swift in Sources */,
 				5415DBE52399FA7B00E94669 /* String+Hash.swift in Sources */,
+				54E1A39023BD90D4003EEF74 /* ChatFilterTagCell.swift in Sources */,
+				545D083823BB592300C9E6C0 /* CommonAddCell.swift in Sources */,
 				54B0C4642351D0630056110B /* TagLayout.swift in Sources */,
 				5415DBF3239A2EE100E94669 /* UIView+Extension.swift in Sources */,
 				546CE093235D948400D92615 /* ScrollViewController.swift in Sources */,
 				5415DBDE2399FA7B00E94669 /* Data+Hash.swift in Sources */,
 				5415DBD52399FA7B00E94669 /* DownloadTask.swift in Sources */,
+				54E1A39423BD9DA1003EEF74 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				54AB0E6B235081F20044B0FC /* CardLayoutViewController.swift in Sources */,
 				546E6DB123600EAC00230766 /* CALayerViewController.swift in Sources */,
 				54EE54A323990781002D70A0 /* PDFCollectionFooter.swift in Sources */,
 				54A31F6E234F3B8200C43D4F /* ViewController.swift in Sources */,
 				54B0C4622351CFE60056110B /* TagViewController.swift in Sources */,
+				54E1A39223BD9259003EEF74 /* ChatFilterTagCollectionCell.swift in Sources */,
 				54AB0E6E235082680044B0FC /* CardLayout.swift in Sources */,
 				5415DBE62399FA7B00E94669 /* Double+TaskInfo.swift in Sources */,
 				5415DBE32399FA7B00E94669 /* UIDevice+Free.swift in Sources */,
@@ -671,16 +743,20 @@
 				546E6DAF235FFFB300230766 /* ImageViewAnimationViewController.swift in Sources */,
 				54B80909235EFF7400D3690A /* AnimationsExamplesTwoViewController.swift in Sources */,
 				54AB0E69235081A90044B0FC /* LayoutAndDelegateViewController.swift in Sources */,
+				54812E6223BB47030029FEB9 /* ChatSettingViewController.swift in Sources */,
 				54EE54A723990AEC002D70A0 /* UIFont+Extension.swift in Sources */,
 				54A31F6A234F3B8200C43D4F /* AppDelegate.swift in Sources */,
 				5415DBDA2399FA7B00E94669 /* TiercelError.swift in Sources */,
 				54B0C45A235182FB0056110B /* StretchyHeaderViewController.swift in Sources */,
+				54E1A38E23BD8701003EEF74 /* FilterViewHeadCell.swift in Sources */,
 				54B0C45E2351B8C40056110B /* WaterFallsLayout.swift in Sources */,
 				548D729323827A07003DE896 /* NotificationCenterViewController.swift in Sources */,
+				545D083423BB519100C9E6C0 /* CommonInputCell.swift in Sources */,
 				5415DBE82399FA7B00E94669 /* ResumeDataHelper.swift in Sources */,
 				54A31F6C234F3B8200C43D4F /* SceneDelegate.swift in Sources */,
 				5415DBF1239A2CBD00E94669 /* PDFPreviewView.swift in Sources */,
 				5415DBD62399FA7B00E94669 /* SessionConfiguration.swift in Sources */,
+				545D083223BB50E200C9E6C0 /* ChatFilterViewController.swift in Sources */,
 				54AB0E672350810A0044B0FC /* BasicViewController.swift in Sources */,
 				546CE097235D9EEE00D92615 /* CGAffineTransformViewController.swift in Sources */,
 				5415DBE92399FA7B00E94669 /* FileChecksumHelper.swift in Sources */,

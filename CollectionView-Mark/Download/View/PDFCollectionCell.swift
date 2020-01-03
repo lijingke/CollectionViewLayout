@@ -31,10 +31,7 @@ class PDFCollectionCell: UICollectionViewCell {
     
     @objc func tapAction() {
         if entity?.hasDownload == false {
-            coverImg.addSubview(downView)
-            downView.snp.makeConstraints { (make) in
-                make.edges.equalToSuperview()
-            }
+            downView.isHidden = false
         }
         
         tapBlock?()
@@ -51,6 +48,7 @@ class PDFCollectionCell: UICollectionViewCell {
         addSubview(readIcon)
         addSubview(readNum)
         coverImg.addSubview(downloadedIcon)
+        coverImg.addSubview(downView)
         
         coverImg.snp.makeConstraints { (make) in
             make.top.left.right.equalToSuperview()
@@ -81,6 +79,10 @@ class PDFCollectionCell: UICollectionViewCell {
             make.left.equalToSuperview().offset(6.5)
             make.size.equalTo(CGSize(width: 12.5, height: 12.5))
         }
+        
+        downView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
     
     public func configureData() {
@@ -89,6 +91,7 @@ class PDFCollectionCell: UICollectionViewCell {
         indexLabel.text = entity?.indexInfo
         readNum.text = entity?.readNum
         downloadedIcon.isHidden = !(entity?.hasDownload ?? false)
+        downView.isHidden = true
     }
     
     lazy var coverImg: UIImageView = {
@@ -130,6 +133,7 @@ class PDFCollectionCell: UICollectionViewCell {
     
     lazy var downView: downloadView = {
         let view = downloadView()
+        view.isHidden = true
         return view
     }()
     

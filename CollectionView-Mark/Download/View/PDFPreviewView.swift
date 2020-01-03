@@ -28,6 +28,7 @@ class PDFPreviewView: UIView {
     }
     
     fileprivate func configureUI() {
+        self.backgroundColor = .systemGroupedBackground
         addSubview(headInfoView)
         addSubview(pdfWebView)
         headInfoView.snp.makeConstraints { (make) in
@@ -35,7 +36,7 @@ class PDFPreviewView: UIView {
             make.height.equalTo(110)
         }
         pdfWebView.snp.makeConstraints { (make) in
-            make.top.equalTo(headInfoView.snp.bottom)
+            make.top.equalTo(headInfoView.snp.bottom).offset(10)
             make.left.bottom.right.equalToSuperview()
         }
     }

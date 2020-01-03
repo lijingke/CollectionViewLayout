@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     let headViewTitles = ["BASICS", "CUSTOM LAYOUT", "UIScrollView", "UIView Animations", "CALYER", "UIView Refresh", "Location", "NotificationCenter", "Download"]
     
-    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform", "UIView Animations - 01", "UIView Animations - 02", "UIImageView Animations"], ["CALayer"], ["SetNeedsLayout"], ["Location"], ["NotificationCenterDemo"], ["PDF Download"]]
+    let dataSource: [[String]] = [["基础布局篇", "布局和代理篇"], ["卡片布局", "瀑布流布局", "可伸缩Header", "标签布局"], ["滚动视图"], ["CGAffineTransform", "UIView Animations - 01", "UIView Animations - 02", "UIImageView Animations"], ["CALayer"], ["SetNeedsLayout"], ["Location"], ["NotificationCenterDemo"], ["PDF Download", "XMessage"]]
     
     fileprivate func configureUI() {
         view.addSubview(tableView)
@@ -177,6 +177,10 @@ extension ViewController: UITableViewDelegate {
                 vc.navigationItem.title = "PDF Download"
                 navigationController?.pushViewController(vc, animated: true)
                 break
+            case 1:
+              let vc = ChatFilterViewController()
+              vc.navigationItem.title = "筛选"
+              navigationController?.pushViewController(vc, animated: true)
             default:
                 break
             }
